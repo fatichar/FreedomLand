@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 4em;
+    color: darkgreen;
+    margin-bottom: 0%;
+    padding: 0%;
+}
+
+.subheader {
+    font-size: 2em;
+    color: darkgreen;
+    margin-top: 0%;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 200px;
+    background: #97a2f5;
+    color: white;
+    padding: 1rem;
+}
+
+.content {
+    padding: 1rem;
+
+    /* align center horizontally */
+    margin: auto auto;
+    /* border: 1px solid black; */
+    display: inline;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: x-large;
+    align-items: center;
+  }
+  
+  footer p, footer a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 15px; /* Adjust spacing around items as needed */
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  footer .fab.fa-whatsapp {
+    color: #25D366; /* WhatsApp official green color */
+  }
+  
+  .contact-us-heading {
+    display: inline;
+    margin-right: 50px;
+    border: 1px solid black;
+  }
+  
+  .contact-us-items {
+    display: inline;
+    margin-right: 50px;
+    border: 1px solid red;
+  }
