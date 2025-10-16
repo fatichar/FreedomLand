@@ -1,0 +1,148 @@
+/* 
+This file is used to normalize styles across different browsers, ensuring consistency in the appearance of HTML elements.
+*/
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em; /* 3 */
+    margin: 0.67em 0; /* 4 */
+}
+
+hr {
+    box-sizing: content-box; /* 5 */
+    height: 0; /* 6 */
+    overflow: visible; /* 7 */
+}
+
+pre {
+    font-family: monospace, monospace; /* 8 */
+    font-size: 1em; /* 9 */
+}
+
+a {
+    background-color: transparent; /* 10 */
+}
+
+abbr[title] {
+    text-decoration: underline; /* 11 */
+    text-decoration: underline dotted; /* 12 */
+}
+
+b,
+strong {
+    font-weight: bolder; /* 13 */
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace; /* 14 */
+    font-size: 1em; /* 15 */
+}
+
+small {
+    font-size: 80%; /* 16 */
+}
+
+sub {
+    font-size: 75%; /* 17 */
+    line-height: 0; /* 18 */
+    position: relative; /* 19 */
+    bottom: 0.25em; /* 20 */
+}
+
+sup {
+    font-size: 75%; /* 21 */
+    line-height: 0; /* 22 */
+    position: relative; /* 23 */
+    top: 0.5em; /* 24 */
+}
+
+table {
+    border-collapse: collapse; /* 25 */
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 26 */
+    font-size: inherit; /* 27 */
+    line-height: inherit; /* 28 */
+}
+
+button,
+input {
+    overflow: visible; /* 29 */
+}
+
+button,
+select {
+    text-transform: none; /* 30 */
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button; /* 31 */
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none; /* 32 */
+    padding: 0; /* 33 */
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText; /* 34 */
+}
+
+input {
+    overflow: visible; /* 35 */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 36 */
+    padding: 0; /* 37 */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto; /* 38 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 39 */
+    outline-offset: -2px; /* 40 */
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none; /* 41 */
+}
+
+textarea {
+    overflow: auto; /* 42 */
+}
+
+[hidden] {
+    display: none; /* 43 */
+}

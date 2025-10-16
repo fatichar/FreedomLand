@@ -1,0 +1,45 @@
+<!-- This file contains a simple contact form placeholder for users to reach out, with no backend functionality implemented yet. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FreedomLand</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+<body>
+    <header>
+        <!-- Include header partial -->
+        {% include '../partials/header.html' %}
+    </header>
+    
+    <nav>
+        <!-- Include navigation partial -->
+        {% include '../partials/nav.html' %}
+    </nav>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you! Please fill out the form below to get in touch.</p>
+        
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Include footer partial -->
+        {% include '../partials/footer.html' %}
+    </footer>
+</body>
+</html>

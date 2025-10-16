@@ -1,0 +1,459 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #f9fafb;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+.site-header {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #10b981;
+}
+
+.btn-donate {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-donate:hover {
+    background-color: #059669;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 600px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url("../images/dove-released-blurred.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    padding: 3rem 2rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.98;
+    line-height: 1.8;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.875rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #1f2937;
+}
+
+.btn-secondary:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Content Section */
+.featured-content {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1f2937;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #6b7280;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.content-card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.content-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* Get Involved Section */
+.get-involved {
+    padding: 4rem 0;
+    background-color: #f3f4f6;
+}
+
+.involvement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.involvement-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.involvement-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.involvement-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background-color: #d1fae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #10b981;
+}
+
+.involvement-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.involvement-card p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.involvement-link {
+    display: inline-block;
+    color: #10b981;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.involvement-link:hover {
+    color: #059669;
+    text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #1f2937;
+    color: #d1d5db;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-column h4 {
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-column p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #9ca3af;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+    color: #10b981;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background-color: #374151;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d1d5db;
+    transition: all 0.2s;
+}
+
+.social-links a:hover {
+    background-color: #10b981;
+    color: white;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.625rem 1rem;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    background-color: #374151;
+    color: white;
+    font-size: 0.875rem;
+}
+
+.newsletter-form input::placeholder {
+    color: #9ca3af;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: #10b981;
+}
+
+.btn-subscribe {
+    padding: 0.625rem 1.5rem;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-subscribe:hover {
+    background-color: #059669;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #374151;
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .main-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero {
+        height: 500px;
+    }
+    
+    .hero-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2.25rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    .content-grid,
+    .involvement-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+}

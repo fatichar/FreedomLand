@@ -1,0 +1,42 @@
+Sure, here's the content for the file `/freedomland/src/data/content.json`:
+
+{
+  "siteTitle": "FreedomLand",
+  "tagline": "Promoting Freedom and Compassion for Animals",
+  "about": {
+    "title": "About Us",
+    "content": "FreedomLand is dedicated to raising awareness about animal rights and promoting a compassionate approach towards all living beings. Our mission is to inspire individuals to take action for the freedom and well-being of animals."
+  },
+  "blog": [
+    {
+      "title": "Understanding Animal Emotions",
+      "excerpt": "Explore the emotional lives of animals and how they experience joy, fear, and love.",
+      "url": "/blog/understanding-animal-emotions"
+    },
+    {
+      "title": "The Impact of Human Actions on Wildlife",
+      "excerpt": "Learn about the consequences of human activities on animal habitats and populations.",
+      "url": "/blog/human-impact-on-wildlife"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Animal Rights Organizations",
+      "url": "https://www.animalrights.org"
+    },
+    {
+      "title": "Educational Materials on Animal Welfare",
+      "url": "https://www.animalwelfareeducation.org"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How can I help animals in need?",
+      "answer": "You can volunteer at local shelters, donate to animal welfare organizations, or adopt pets from rescues."
+    },
+    {
+      "question": "What is the importance of animal rights?",
+      "answer": "Animal rights are essential for ensuring that all living beings are treated with respect and dignity, promoting a more compassionate society."
+    }
+  ]
+}
