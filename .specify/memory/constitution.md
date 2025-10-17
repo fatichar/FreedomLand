@@ -1,61 +1,50 @@
-# FreedomLand Website Constitution
+# [PROJECT_NAME] Constitution
+<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
 ## Core Principles
 
-### I. Simplicity First
-- Keep the codebase simple and maintainable by a single developer
-- Favor established solutions over custom implementations
-- Document all non-obvious decisions with clear reasoning
+### [PRINCIPLE_1_NAME]
+<!-- Example: I. Library-First -->
+[PRINCIPLE_1_DESCRIPTION]
+<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
 
-### II. Progressive Enhancement
-- Build core functionality first, then enhance progressively
-- Ensure basic functionality works without JavaScript
-- Follow web standards and semantic HTML
+### [PRINCIPLE_2_NAME]
+<!-- Example: II. CLI Interface -->
+[PRINCIPLE_2_DESCRIPTION]
+<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
 
-### III. Testing Strategy
-- Write unit tests for critical business logic
-- Implement end-to-end tests for key user journeys
-- Maintain test coverage for core features
+### [PRINCIPLE_3_NAME]
+<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
+[PRINCIPLE_3_DESCRIPTION]
+<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
 
-### IV. Security & Performance
-- Follow OWASP security best practices
-- Optimize for Core Web Vitals
-- Implement proper caching strategies
-- Keep dependencies up to date
+### [PRINCIPLE_4_NAME]
+<!-- Example: IV. Integration Testing -->
+[PRINCIPLE_4_DESCRIPTION]
+<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
 
-## Development Workflow
+### [PRINCIPLE_5_NAME]
+<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
+[PRINCIPLE_5_DESCRIPTION]
+<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
 
-### Version Control
-- Use feature branches for new development
-- Write clear, atomic commits
-- Keep pull requests small and focused
-- Use conventional commits format
+## [SECTION_2_NAME]
+<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
 
-### Documentation
-- Maintain a README with setup instructions
-- Document architecture decisions (ADRs)
-- Keep API documentation up to date
-- Comment complex business logic
+[SECTION_2_CONTENT]
+<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
 
-## Deployment & Maintenance
+## [SECTION_3_NAME]
+<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
 
-### Release Process
-- Use semantic versioning (MAJOR.MINOR.PATCH)
-- Tag releases in git
-- Keep a changelog
-- Test in staging before production deployment
-
-### Monitoring
-- Set up error tracking
-- Monitor performance metrics
-- Track user analytics (respecting privacy)
-- Regular backups of critical data
+[SECTION_3_CONTENT]
+<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
 
 ## Governance
+<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-This constitution serves as the single source of truth for development practices. As a solo developer, I will:
-1. Review and update this document quarterly
-2. Document any deviations with rationale
-3. Keep the project structure aligned with these principles
+[GOVERNANCE_RULES]
+<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
 
-**Version**: 1.0.0 | **Ratified**: 2025-10-16 | **Last Amended**: 2025-10-16
+**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
+<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
