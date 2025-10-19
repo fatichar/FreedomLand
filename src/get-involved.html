@@ -4,44 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Involved - FreedomLand</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Include header partial -->
-        {% include 'partials/header.html' %}
-        <!-- Include navigation partial -->
-        {% include 'partials/nav.html' %}
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">FreedomLand</span>
+                    <span class="logo-icon" style="transform: scaleX(-1);">🕊️</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Articles</a>
+                    <a href="#videos">Videos</a>
+                    <a href="get-involved.html">Get Involved</a>
+                    <a href="about.html">About Us</a>
+                    <button class="btn-donate">Donate</button>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <h1>Get Involved</h1>
-        <p>At FreedomLand, we believe that every action counts. Here are some ways you can help promote freedom and compassion for animals:</p>
-        
-        <section>
-            <h2>Volunteer</h2>
-            <p>Join us in our mission by volunteering at local animal sanctuaries or shelters. Your time and effort can make a significant difference in the lives of animals in need.</p>
-        </section>
+    <!-- Get Involved Content -->
+    <section class="featured-content" style="padding-top: 3rem;">
+        <div class="container">
+            <h1 class="section-title">Get Involved</h1>
+            <p class="section-subtitle">At FreedomLand, we believe that every action counts. Here are some ways you can help promote freedom and compassion for animals:</p>
+        </div>
+    </section>
 
-        <section>
-            <h2>Donate</h2>
-            <p>Your contributions can help provide food, shelter, and medical care for animals. Consider making a one-time donation or setting up a recurring contribution.</p>
-        </section>
+    <!-- Get Involved Section -->
+    <section class="get-involved">
+        <div class="container">
+            <div class="involvement-grid">
+                <div class="involvement-card">
+                    <div class="involvement-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Volunteer</h3>
+                    <p>Join us in our mission by volunteering at local animal sanctuaries or shelters. Your time and effort can make a significant difference in the lives of animals in need.</p>
+                    <a href="#" class="involvement-link">Join Us</a>
+                </div>
+                <div class="involvement-card">
+                    <div class="involvement-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3>Donate</h3>
+                    <p>Your contributions can help provide food, shelter, and medical care for animals. Consider making a one-time donation or setting up a recurring contribution.</p>
+                    <a href="#" class="involvement-link">Give Today</a>
+                </div>
+                <div class="involvement-card">
+                    <div class="involvement-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Advocate</h3>
+                    <p>Spread the word about animal rights and welfare. Use your voice on social media and in your community to raise awareness about the importance of compassion towards all living beings.</p>
+                    <a href="#" class="involvement-link">Take Action</a>
+                </div>
+                <div class="involvement-card">
+                    <div class="involvement-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </div>
+                    <h3>Share Your Story</h3>
+                    <p>If you have a personal story about an animal or a sanctuary experience, we would love to hear it! Sharing your story can inspire others to take action.</p>
+                    <a href="#" class="involvement-link">Share Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h2>Advocate</h2>
-            <p>Spread the word about animal rights and welfare. Use your voice on social media and in your community to raise awareness about the importance of compassion towards all living beings.</p>
-        </section>
-
-        <section>
-            <h2>Share Your Story</h2>
-            <p>If you have a personal story about an animal or a sanctuary experience, we would love to hear it! Sharing your story can inspire others to take action.</p>
-        </section>
-    </main>
-
-    <footer>
-        <!-- Include footer partial -->
-        {% include 'partials/footer.html' %}
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>FreedomLand</h4>
+                    <p>Working towards a world where all animals are free from cruelty and exploitation.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="blog.html">Articles</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest news and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FreedomLand. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="assets/scripts/main.js"></script>
 </body>
 </html>

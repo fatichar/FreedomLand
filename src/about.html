@@ -4,27 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About FreedomLand</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Include header partial -->
-        {% include 'partials/header.html' %}
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">FreedomLand</span>
+                    <span class="logo-icon" style="transform: scaleX(-1);">🕊️</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Articles</a>
+                    <a href="#videos">Videos</a>
+                    <a href="get-involved.html">Get Involved</a>
+                    <a href="about.html">About Us</a>
+                    <button class="btn-donate">Donate</button>
+                </nav>
+            </div>
+        </div>
     </header>
-    <nav>
-        <!-- Include navigation partial -->
-        {% include 'partials/nav.html' %}
-    </nav>
-    <main>
-        <h1>About FreedomLand</h1>
-        <p>Welcome to FreedomLand, a sanctuary dedicated to promoting freedom and compassion for all animals. Our mission is to raise awareness about the importance of animal rights and to inspire individuals to take action in their communities.</p>
-        <p>At FreedomLand, we believe that every creature deserves to live a life free from suffering and exploitation. Through education, advocacy, and community engagement, we strive to create a world where animals are treated with the respect and dignity they deserve.</p>
-        <p>Join us in our journey to spread compassion and make a difference in the lives of animals everywhere.</p>
-    </main>
-    <footer>
-        <!-- Include footer partial -->
-        {% include 'partials/footer.html' %}
+
+    <!-- About Content -->
+    <section class="featured-content" style="padding-top: 3rem;">
+        <div class="container">
+            <h1 class="section-title">About FreedomLand</h1>
+            <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <p style="font-size: 1.125rem; line-height: 1.8; color: #4b5563; margin-bottom: 1.5rem;">
+                    Welcome to FreedomLand, a sanctuary dedicated to promoting freedom and compassion for all animals. Our mission is to raise awareness about the importance of animal rights and to inspire individuals to take action in their communities.
+                </p>
+                <p style="font-size: 1.125rem; line-height: 1.8; color: #4b5563; margin-bottom: 1.5rem;">
+                    At FreedomLand, we believe that every creature deserves to live a life free from suffering and exploitation. Through education, advocacy, and community engagement, we strive to create a world where animals are treated with the respect and dignity they deserve.
+                </p>
+                <p style="font-size: 1.125rem; line-height: 1.8; color: #4b5563; margin-bottom: 1.5rem;">
+                    Join us in our journey to spread compassion and make a difference in the lives of animals everywhere.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>FreedomLand</h4>
+                    <p>Working towards a world where all animals are free from cruelty and exploitation.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="blog.html">Articles</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest news and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FreedomLand. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
     <script src="assets/scripts/main.js"></script>
 </body>
 </html>

@@ -1,50 +1,126 @@
-<!-- This file contains the blog page for the FreedomLand website, listing articles about animal emotions, freedom, and human impact. -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - FreedomLand</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Include header partial -->
-        {% include 'partials/header.html' %}
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">FreedomLand</span>
+                    <span class="logo-icon" style="transform: scaleX(-1);">🕊️</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Articles</a>
+                    <a href="#videos">Videos</a>
+                    <a href="get-involved.html">Get Involved</a>
+                    <a href="about.html">About Us</a>
+                    <button class="btn-donate">Donate</button>
+                </nav>
+            </div>
+        </div>
     </header>
-    
-    <nav>
-        <!-- Include navigation partial -->
-        {% include 'partials/nav.html' %}
-    </nav>
-    
-    <main>
-        <h1>Blog</h1>
-        <p>Welcome to the FreedomLand blog, where we explore the emotions of animals, their quest for freedom, and the impact of human actions on their lives.</p>
-        
-        <article>
-            <h2>Understanding Animal Emotions</h2>
-            <p>Animals experience a wide range of emotions similar to humans. This article delves into the emotional lives of various species and how they express their feelings.</p>
-            <a href="#">Read more...</a>
-        </article>
-        
-        <article>
-            <h2>The Importance of Freedom for Animals</h2>
-            <p>Freedom is a fundamental right for all living beings. This piece discusses the significance of providing animals with the freedom they deserve.</p>
-            <a href="#">Read more...</a>
-        </article>
-        
-        <article>
-            <h2>Human Impact on Wildlife</h2>
-            <p>Our actions have profound effects on wildlife. This article examines the consequences of human activities on animal habitats and populations.</p>
-            <a href="#">Read more...</a>
-        </article>
-    </main>
-    
-    <footer>
-        <!-- Include footer partial -->
-        {% include 'partials/footer.html' %}
+
+    <!-- Blog Content -->
+    <section class="featured-content" style="padding-top: 3rem;">
+        <div class="container">
+            <h1 class="section-title">Blog</h1>
+            <p class="section-subtitle">Welcome to the FreedomLand blog, where we explore the emotions of animals, their quest for freedom, and the impact of human actions on their lives.</p>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=800&h=600&fit=crop');"></div>
+                    <div class="card-content">
+                        <h3>Understanding Animal Emotions</h3>
+                        <p>Animals experience a wide range of emotions similar to humans. This article delves into the emotional lives of various species and how they express their feelings.</p>
+                        <a href="#" class="involvement-link">Read more...</a>
+                    </div>
+                </div>
+                
+                <div class="content-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop');"></div>
+                    <div class="card-content">
+                        <h3>The Importance of Freedom for Animals</h3>
+                        <p>Freedom is a fundamental right for all living beings. This piece discusses the significance of providing animals with the freedom they deserve.</p>
+                        <a href="#" class="involvement-link">Read more...</a>
+                    </div>
+                </div>
+                
+                <div class="content-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&h=600&fit=crop');"></div>
+                    <div class="card-content">
+                        <h3>Human Impact on Wildlife</h3>
+                        <p>Our actions have profound effects on wildlife. This article examines the consequences of human activities on animal habitats and populations.</p>
+                        <a href="#" class="involvement-link">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>FreedomLand</h4>
+                    <p>Working towards a world where all animals are free from cruelty and exploitation.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="blog.html">Articles</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest news and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FreedomLand. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="assets/scripts/main.js"></script>
 </body>
 </html>
