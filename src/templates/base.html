@@ -1,31 +1,47 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreedomLand</title>
-    <link rel="stylesheet" href="../assets/styles/normalize.css">
-    <link rel="stylesheet" href="../assets/styles/main.css">
+    <meta name="description" content="{{ description or 'FreedomLand - Working towards a world where all animals are free from cruelty and exploitation.' }}">
+    <title>{% if title %}{{ title }} | {% endif %}FreedomLand</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/styles/normalize.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/custom.css">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/assets/images/logo.png" as="image">
 </head>
 <body>
     <header>
-        <!-- Include header partial -->
-        {% include '../partials/header.html' %}
-        <!-- Include navigation partial -->
-        {% include '../partials/nav.html' %}
+        {% include "partials/header.njk" %}
+        {% include "partials/nav.njk" %}
     </header>
     
     <main>
-        {% block content %}
-        <!-- Main content will be injected here -->
-        {% endblock %}
+        {{ content | safe }}
     </main>
     
     <footer>
-        <!-- Include footer partial -->
-        {% include '../partials/footer.html' %}
+        {% include "partials/footer.njk" %}
     </footer>
     
-    <script src="../assets/scripts/main.js"></script>
+    <script src="/assets/scripts/main.js"></script>
 </body>
 </html>

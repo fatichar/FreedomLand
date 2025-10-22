@@ -1,0 +1,23 @@
+<header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <a href="/" class="logo">
+                <!-- Using text logo until we have the actual logo -->
+                <span class="logo-text">FreedomLand</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <a href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+                <a href="/about/" {% if page.url == '/about/' %}class="active"{% endif %}>About</a>
+                <a href="/blog/" {% if page.url == '/blog/' %}class="active"{% endif %}>Blog</a>
+                <a href="/get-involved/" {% if page.url == '/get-involved/' %}class="active"{% endif %}>Get Involved</a>
+                <a href="/contact/" {% if page.url == '/contact/' %}class="active"{% endif %}>Contact</a>
+                <a href="/donate/" class="btn btn-donate">Donate</a>
+            </nav>
+        </div>
+    </div>
+</header>

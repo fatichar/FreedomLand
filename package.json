@@ -4,21 +4,27 @@
   "description": "A static website promoting freedom and compassion for animals, featuring educational content and inspiring design.",
   "main": "src/assets/scripts/main.js",
   "scripts": {
-    "start": "live-server src",
-    "build": "echo 'No build process defined'",
-    "test": "echo 'No tests defined'"
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "debug": "DEBUG=* eleventy"
   },
   "keywords": [
     "freedom",
     "animals",
     "compassion",
     "education",
-    "static website"
+    "static site",
+    "11ty",
+    "eleventy"
   ],
   "author": "Your Name",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-navigation": "^0.3.5"
+  },
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.0"
   }
 }

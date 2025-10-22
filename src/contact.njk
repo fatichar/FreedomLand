@@ -1,0 +1,79 @@
+---
+layout: layouts/base.njk
+title: Contact Us
+description: Get in touch with FreedomLand. We would love to hear from you!
+---
+
+<style>
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form label {
+        display: block;
+        font-weight: 600;
+        color: #1f2937;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.5rem;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        transition: border-color 0.2s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        outline: none;
+        border-color: #10b981;
+    }
+
+    .contact-form button {
+        margin-top: 1.5rem;
+        width: 100%;
+        padding: 0.875rem;
+        background-color: #10b981;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .contact-form button:hover {
+        background-color: #059669;
+    }
+</style>
+
+<section class="featured-content" style="padding-top: 3rem;">
+    <div class="container">
+        <h1 class="section-title">Contact Us</h1>
+        <p class="section-subtitle">We would love to hear from you! Please fill out the form below to get in touch.</p>
+
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>

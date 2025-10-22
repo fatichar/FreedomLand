@@ -1,0 +1,183 @@
+/* Page-specific styles for About, Get Involved, and other content pages */
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 2rem;
+    background: #f3f4f6;
+    border-radius: 0.75rem;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #10b981;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    display: block;
+    font-size: 1rem;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+/* Values Grid */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.value-box {
+    padding: 2rem;
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.value-box h3 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.value-box p {
+    color: #6b7280;
+}
+
+/* Ways to Get Involved Grid */
+.ways-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.way-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.way-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background-color: #d1fae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #10b981;
+    font-size: 2rem;
+}
+
+.way-card h3 {
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.way-card p {
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.way-link {
+    color: #10b981;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.way-link:hover {
+    text-decoration: underline;
+}
+
+/* Section Spacing */
+.section-spacing {
+    margin-top: 3rem;
+    font-size: 1.75rem;
+}
+
+.section-subtitle-text {
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Newsletter Form */
+.newsletter-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-form-wrapper {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 0.875rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.newsletter-button {
+    padding: 0.875rem 2rem;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.newsletter-button:hover {
+    background-color: #059669;
+}
+
+/* Event Date Styling */
+.event-date {
+    color: #10b981;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Team Member Card Image */
+.team-member-image {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member-icon {
+    font-size: 4rem;
+    color: white;
+}
+
+.team-member-role {
+    color: #10b981;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Page Header Spacing */
+.page-content {
+    padding-top: 3rem;
+}

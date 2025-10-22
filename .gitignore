@@ -21,6 +21,7 @@ out/
 .temp/
 .cache/
 .turbo/
+_site/
 
 # Environment variables
 .env
